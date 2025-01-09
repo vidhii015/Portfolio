@@ -15,20 +15,20 @@ function runGsap(params) {
       }
     );
 
-    tl.from("main .arrow", {
+    tl.from("main .arrow-down", {
       y: -20,
       opacity: 0,
       duration: 0.5,
       delay: 0.3,
     });
 
-    arrow = document.querySelector(".arrow");
-    arrow.addEventListener("mouseenter", () => {
-      gsap.to(arrow, { y: 7, duration: 0.3 });
+    arrowDown = document.querySelector(".arrow-down");
+    arrowDown.addEventListener("mouseenter", () => {
+      gsap.to(arrowDown, { y: 7, duration: 0.3 });
     });
 
-    arrow.addEventListener("mouseleave", () => {
-      gsap.to(arrow, { y: -7, duration: 0.3 });
+    arrowDown.addEventListener("mouseleave", () => {
+      gsap.to(arrowDown, { y: -7, duration: 0.3 });
     });
 
     gsap.from("main .skills-section p", {
