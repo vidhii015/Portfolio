@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>vidhi vekariya</title>
+    <!-- tailwindcss -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -13,6 +16,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -46,20 +51,31 @@
         >SKILLS</a
       >
     </header>
+
     <!-- main -->
     <main>
       <!-- Intro -->
-      <div class="mt-20 intro flex flex-col items-center gap-5 mg:mt-28">
-        <h1 class="text-2xl font-bold text-[#4e6e56] tracking-wide md:text-5xl">
+      <div
+        class="mt-20 intro flex flex-col items-center gap-5 md:mt-28 xl:mt-32"
+      >
+        <h1
+          class="text-2xl font-bold text-[#4e6e56] tracking-wide md:text-5xl xl:text-[52px]"
+        >
           HEY, I'M Vidhi Vekariya
         </h1>
         <p
-          class="mt-3 text-sm w-[80%] tracking-wider text-center md:text-xl md:w-[50%]"
+          class="mt-3 text-sm w-[80%] tracking-wider text-center md:text-xl md:w-[60%]"
         >
           A detail-oriented web developer. I've built websites that are both
-          visually appealing and easy to use.
+          visually appealing and easy to use. |
+          <span class="hover:text-[#4e6e56]">
+            <i
+              class="fa-solid fa-phone text-[12px] bg-[#4e6e56] text-white p-2 rounded-full mx-1 mt-3"
+            ></i>
+            72268 51535</span
+          >
         </p>
-        <span class="socials mt-3 flex gap-7">
+        <span class="socials mt-3 flex gap-10">
           <a href="https://github.com/vidhii015" target="_blank">
             <i
               class="fa-brands fa-github border rounded-full p-2 hover:p-1.5 hover:animate-ping ease-in duration-500"
@@ -79,19 +95,24 @@
             ></i>
           </a>
         </span>
-        <button class="w-fit mt-4 active:scale-90">
+        <button class="w-fit mt-4 active:scale-90 group">
           <a
-            href="CV/Vidhi_Vekariya.pdf"
-            download="Vidhi_Vekariya.pdf"
+            href="Vidhi_Vekariya.pdf"
             target="_blank"
-            class="text-sm rounded-md bg-[#4e6e56] px-8 py-2.5 md:text-xl"
-          >
-            Download CV</a
+            class="text-sm rounded-md bg-[#4e6e56] px-10 py-2 flex items-center gap-2 md:text-xl"
+            >Resume</a
           >
         </button>
+
+        <a href="#skills"
+          ><i
+            class="arrow fa-solid fa-arrow-down-long text-2xl mt-16 hidden md:block"
+          ></i
+        ></a>
       </div>
+
       <!-- Skills-Section -->
-      <div class="skills-section mt-36" id="skills">
+      <div class="skills-section mt-20" id="skills">
         <p
           class="text-lg text-stone-600 -mt-4 pr-5 bg-[#151519] relative before:absolute before:contant before:h-[1px] before:w-[85%] before:bg-stone-600 before:top-4 before:right-0 md:text-xl md:before:w-[90%] xl:before:w-[94%]"
         >
@@ -102,65 +123,81 @@
         >
           <h1 class="text-6xl w-1/2 md:sticky top-0 h-fit">Skills</h1>
           <span
-            class="skill flex items-center flex-wrap text-2xl gap-20 leading-4 md:text-4xl"
+            class="skill flex items-center flex-wrap text-2xl gap-6 md:gap-20 leading-4 md:text-[34px]"
           >
             <h4
-              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-1 after:bg-[#4e6e56] after:animate-pulse"
+              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-[25%] after:bg-[#4e6e56] after:animate-pulse"
             >
               HTML
+              <span class="text-[17px] text-stone-300 font-light"
+                >( HTML 5 )</span
+              >
             </h4>
             <h4
-              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-1 after:bg-[#4e6e56] after:animate-pulse"
+              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-[25%] after:bg-[#4e6e56] after:animate-pulse"
             >
               CSS
+              <span class="text-[17px] text-stone-300 font-light"
+                >( CSS 3 )</span
+              >
             </h4>
             <h4
-              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-1 after:bg-[#4e6e56] after:animate-pulse"
-            >
-              Tailwind CSS
-            </h4>
-            <h4
-              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-1 after:bg-[#4e6e56] after:animate-pulse"
-            >
-              Bootstrap
-            </h4>
-            <h4
-              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-1 after:bg-[#4e6e56] after:animate-pulse"
+              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-[25%] after:bg-[#4e6e56] after:animate-pulse"
             >
               JavaScript
             </h4>
             <h4
-              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-1 after:bg-[#4e6e56] after:animate-pulse"
+              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-[25%] after:bg-[#4e6e56] after:animate-pulse"
+            >
+              Tailwind CSS
+            </h4>
+            <h4
+              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-[25%] after:bg-[#4e6e56] after:animate-pulse"
+            >
+              Bootstrap
+            </h4>
+            <h4
+              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-[25%] after:bg-[#4e6e56] after:animate-pulse"
             >
               JQuery
             </h4>
             <h4
-              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-1 after:bg-[#4e6e56] after:animate-pulse"
+              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-[25%] after:bg-[#4e6e56] after:animate-pulse"
             >
               GSAP
             </h4>
             <h4
-              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-1 after:bg-[#4e6e56] after:animate-pulse"
+              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-[25%] after:bg-[#4e6e56] after:animate-pulse"
             >
               PostCSS
             </h4>
             <h4
-              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-1 after:bg-[#4e6e56] after:animate-pulse"
+              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-[25%] after:bg-[#4e6e56] after:animate-pulse"
             >
               Sass
             </h4>
             <h4
-              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-1 after:bg-[#4e6e56] after:animate-pulse"
+              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-[25%] after:bg-[#4e6e56] after:animate-pulse"
             >
               Less
             </h4>
             <h4
-              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-1 after:bg-[#4e6e56] after:animate-pulse"
+              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-[25%] after:bg-[#4e6e56] after:animate-pulse"
+            >
+              Particles.js
+            </h4>
+            <h4
+              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-[25%] after:bg-[#4e6e56] after:animate-pulse"
+            >
+              Vanta.js
+            </h4>
+            <h4
+              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-[25%] after:bg-[#4e6e56] after:animate-pulse"
             >
               WordPress
             </h4>
             <h4
-              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-1 after:bg-[#4e6e56] after:animate-pulse"
+              class="after:content after:h-2.5 after:w-2.5 after:rounded-full relative after:absolute after:-right-11 after:top-[25%] after:bg-[#4e6e56] after:animate-pulse"
             >
               Git
             </h4>
@@ -168,6 +205,7 @@
           </span>
         </div>
       </div>
+
       <!-- Project-Section -->
       <div class="project-section mt-32" id="project-section">
         <p
@@ -197,16 +235,12 @@
               </h5>
               <ul class="list-disc text-lg w-[85%]">
                 <li class="mt-4">
-                  Developed a visually appealing and responsive e-commerce
-                  website for an art gallery.
+                  <b>Technologies Used : </b>HTML , CSS , JavaScript , GSAP
                 </li>
                 <li class="mt-4">
-                  Used GSAP to create smooth animations, improving user
-                  interaction and engagement.
-                </li>
-                <li class="mt-4">
-                  Designed intuitive layouts and ensured seamless performance
-                  across all devices.
+                  Developed a responsive e-commerce site for an art gallery with
+                  smooth GSAP animations , intuitive layouts , and seamless
+                  cross-device performance.
                 </li>
               </ul>
             </div>
@@ -228,17 +262,13 @@
               </h5>
               <ul class="list-disc text-lg w-[85%]">
                 <li class="mt-4">
-                  Built a modern, interactive, and responsive website showcasing
-                  the brand’s creative identity.
+                  <b>Technologies Used : </b>HTML , CSS , JavaScript ,
+                  Particle.js , Swiper.js , GSAP
                 </li>
                 <li class="mt-4">
-                  Integrated Particle.js for engaging background animations,
-                  Swiper.js for smooth carousels, and GSAP for high-quality
-                  transitions and animations.
-                </li>
-                <li class="mt-4">
-                  Applied Tailwind CSS for efficient and flexible styling and
-                  ensured clean, semantic HTML structure.
+                  Built a modern , responsive website using Particle.js ,
+                  Swiper.js , and GSAP for animations , with Tailwind CSS for
+                  styling and clean HTML structure.
                 </li>
               </ul>
             </div>
@@ -260,12 +290,12 @@
               </h5>
               <ul class="list-disc text-lg w-[85%]">
                 <li class="mt-4">
-                  Developed London Wealth Management, a professional financial
-                  services website firm in London.
+                  <b>Technologies Used : </b>HTML , Tailwind CSS , JavaScript
                 </li>
                 <li class="mt-4">
-                  Built the website using HTML, Tailwind CSS, and JavaScript for
-                  a clean, modern, and responsive design.
+                  Developed a clean , modern , and responsive website for
+                  financial services website firm in London using HTML ,
+                  Tailwind CSS , and JavaScript.
                 </li>
               </ul>
             </div>
@@ -287,13 +317,12 @@
               </h5>
               <ul class="list-disc text-lg w-[85%]">
                 <li class="mt-4">
-                  Created an interactive Gradient Generator that lets users
-                  easily create and customize gradients for web design.
+                  <b>Technologies Used : </b>HTML , CSS , JavaScript
                 </li>
                 <li class="mt-4">
-                  Built with HTML, CSS, and JavaScript, the tool offers an
-                  intuitive interface and allows users to copy the generated
-                  gradient code for seamless integration into projects.
+                  Created an interactive Gradient Generator with HTML, CSS, and
+                  JavaScript, allowing users to customize and copy gradient code
+                  for web design.
                 </li>
               </ul>
             </div>
@@ -315,6 +344,9 @@
               </h5>
               <ul class="list-disc text-lg w-[85%]">
                 <li class="mt-4">
+                  <b>Technologies Used : </b>HTML , CSS , JavaScript
+                </li>
+                <li class="mt-4">
                   Built a real-time currency converter using HTML, CSS, and
                   JavaScript, allowing users to easily convert currencies using
                   the latest exchange rates.
@@ -324,6 +356,7 @@
           </div>
         </div>
       </div>
+
       <!-- Education Section -->
       <div class="education-section mt-28">
         <p
@@ -331,9 +364,7 @@
         >
           About
         </p>
-        <div
-          class="education mt-20 flex flex-col gap-14 justify-between md:flex-row md:gap-24"
-        >
+        <div class="education mt-20 flex flex-col gap-14 md:flex-row md:gap-24">
           <h1 class="text-6xl w-1/3 md:sticky top-0 h-fit">Education</h1>
           <div class="education-infos flex flex-col gap-12">
             <div class="education-info flex flex-col gap-4">
@@ -351,6 +382,7 @@
           </div>
         </div>
       </div>
+
       <!-- Certification Section -->
       <div class="certification-section mt-28">
         <p
@@ -359,7 +391,7 @@
           About
         </p>
         <div
-          class="certification mt-20 flex flex-col gap-14 justify-between md:flex-row md:gap-24"
+          class="certification mt-20 flex flex-col gap-14 md:flex-row md:gap-24"
         >
           <h1 class="text-5xl w-1/3 md:sticky top-0 h-fit md:text-6xl">
             CERTIFICATION
@@ -380,7 +412,7 @@
       <div
         class="contact-section mt-32 flex flex-col items-center gap-12 border border-stone-600 rounded-[50px] px-5 py-32"
       >
-        <h3 class="text-2xl md:text-4xl">Looking for a new talent?</h3>
+        <h3 class="text-2xl md:text-4xl">Looking for a new talent ?</h3>
         <h1
           class="text-xl hover:text-[#4e6e56] duration-300 cursor-pointer md:text-5xl xl:text-7xl"
         >
@@ -394,18 +426,17 @@
               class="arrow h-3.5 w-3.5 rounded-full bg-[#4e6e56] group-hover:h-8 group-hover:w-8 duration-300 relative"
             >
               <div
-                class="animate-ping group-hover:animate-none absolute h-full w-full rounded-full bg-[#4e6e56] opacity-75 group-hover:opacity-100 group-hover:bg-[#4e6e56]"
-              >
-                <i
-                  class="fa-solid fa-arrow-up rotate-45 absolute top-1.5 left-1.5 invisible group-hover:visible"
-                ></i>
-              </div>
+                class="animate-ping absolute h-full w-full rounded-full bg-[#648a6d] opacity-75 group-hover:opacity-100 group-hover:bg-[#4e6e56] duration-300 group-hover:animate-none"
+              ></div>
+              <i
+                class="fa-solid fa-arrow-up rotate-45 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-0 group-hover:scale-100 group-hover:rotate-45 duration-300"
+              ></i>
             </div>
             <a
-              href="www.linkedin.com/in/vidhi-vekariya-07534a30a"
+              href="https://github.com/vidhii015"
               target="_blank"
-              class="hover:text-[#4e6e56] duration-300"
-              >Linkedin</a
+              class="hover:text-[#4e6e56]"
+              >GitHub</a
             >
           </div>
           <div class="icon flex items-center gap-5 group">
@@ -413,29 +444,46 @@
               class="arrow h-3.5 w-3.5 rounded-full bg-[#4e6e56] group-hover:h-8 group-hover:w-8 duration-300 relative"
             >
               <div
-                class="animate-ping group-hover:animate-none absolute h-full w-full rounded-full bg-[#648a6d] opacity-75 group-hover:opacity-100 group-hover:bg-[#4e6e56]"
-              >
-                <i
-                  class="fa-solid fa-arrow-up rotate-45 absolute top-1.5 left-1.5 invisible group-hover:visible"
-                ></i>
-              </div>
+                class="animate-ping absolute h-full w-full rounded-full bg-[#648a6d] opacity-75 group-hover:opacity-100 group-hover:bg-[#4e6e56] duration-300 group-hover:animate-none"
+              ></div>
+              <i
+                class="fa-solid fa-arrow-up rotate-45 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 scale-0 group-hover:scale-100 group-hover:rotate-45 duration-300"
+              ></i>
             </div>
             <a
-              href="CV/Vidhi_Vekariya.pdf"
+              href="Vidhi_Vekariya.pdf"
               download="Vidhi_Vekariya.pdf"
               target="_blank"
               class="hover:text-[#4e6e56]"
-              >Download CV</a
+              >Download Resume</a
             >
           </div>
         </span>
       </div>
     </main>
+
     <!-- Footer -->
-    <footer class="flex justify-between mt-5 text-stone-400 text-sm">
-      <!-- <p>&copy; 2024 Vidhi</p> -->
-      <p></p>
-      <p>Made by Vidhi</p>
+    <footer class="mt-5 text-stone-400 text-sm text-end mr-5">
+      Made By Vidhi<span class="ml-1.5">: )</span>
     </footer>
+
+    <!-- GSAP CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- ScrollTrigger CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- GSAP js -->
+    <script src="GSAP.js"></script>
   </body>
 </html>
