@@ -1,9 +1,12 @@
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger); // Register the ScrollTrigger plugin for GSAP
 
 function runGsap(params) {
+  // Only run the animations on screens wider than 760px
   if (window.innerWidth > 760) {
+    // Create a timeline for sequential animations
     const tl = gsap.timeline();
 
+    // Intro section animations
     tl.from(
       "main .intro h1, main .intro p, main .intro span, main .intro button",
       {
@@ -22,6 +25,7 @@ function runGsap(params) {
       delay: 0.3,
     });
 
+    // Add hover effect to the arrow-down element
     arrowDown = document.querySelector(".arrow-down");
     arrowDown.addEventListener("mouseenter", () => {
       gsap.to(arrowDown, { y: 7, duration: 0.3 });
@@ -31,6 +35,7 @@ function runGsap(params) {
       gsap.to(arrowDown, { y: -7, duration: 0.3 });
     });
 
+    // Skills section animations
     gsap.from("main .skills-section p", {
       y: -30,
       opacity: 0,
@@ -64,7 +69,8 @@ function runGsap(params) {
       },
     });
 
-    gsap.from("main .project-section p", {
+    // Project section animations
+    gsap.from("main .project-section h5", {
       y: -30,
       opacity: 0,
       duration: 0.7,
@@ -98,6 +104,7 @@ function runGsap(params) {
       },
     });
 
+    // Education section animations
     gsap.from("main .education-section p", {
       y: -30,
       opacity: 0,
@@ -134,6 +141,8 @@ function runGsap(params) {
         },
       }
     );
+
+    // Certification section animations
     gsap.from("main .certification-section p", {
       y: -30,
       opacity: 0,
@@ -171,6 +180,7 @@ function runGsap(params) {
       }
     );
 
+    // Contact section animation
     gsap.from("main .contact-section", {
       y: 50,
       opacity: 0,
@@ -184,4 +194,4 @@ function runGsap(params) {
   }
 }
 
-runGsap();
+runGsap(); // Initialize the animations
