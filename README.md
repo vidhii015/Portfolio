@@ -18,4 +18,4 @@ A **clean and modern** portfolio designed with **HTML, Tailwind CSS, and GSAP**.
 
 
 ### 🔗 Live Demo  
-[View Website](https://vidhii015.github.io/Portfolio/)
+[View Portfolio](https://vidhii015.github.io/Portfolio/)
