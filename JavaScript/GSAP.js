@@ -1,9 +1,8 @@
 gsap.registerPlugin(ScrollTrigger); // Register the ScrollTrigger plugin for GSAP
 
 function runGsap(params) {
-  // Only run the animations on screens wider than 760px
   if (window.innerWidth > 760) {
-    // Create a timeline for sequential animations
+    // timeline
     const tl = gsap.timeline();
 
     // Intro section animations
